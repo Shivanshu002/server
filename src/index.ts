@@ -8,7 +8,7 @@ import inquiryRoutes from './routes/inquiryRoutes';
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: ['https://edupro-frontend.netlify.app', 'http://localhost:3000'] }));
 app.use(express.json());
 
 app.use('/api/courses', courseRoutes);
